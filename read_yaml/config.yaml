@@ -1,0 +1,7 @@
+Strategy:
+  SingleAvg:
+    version: v1_0
+    name: single strategy
+  DoubleAvg:
+    version: v1_0
+    name: double strategy
