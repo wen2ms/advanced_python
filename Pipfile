@@ -8,6 +8,7 @@ pyyaml = "*"
 yacs = "*"
 numpy = "*"
 pandas = "*"
+ipykernel = "*"
 
 [dev-packages]
 
