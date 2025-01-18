@@ -9,6 +9,7 @@ yacs = "*"
 numpy = "*"
 pandas = "*"
 ipykernel = "*"
+matplotlib = "*"
 
 [dev-packages]
 
