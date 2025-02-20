@@ -24,6 +24,19 @@ def my_sum_list(numbers: list[int]) -> int:
 
 print(my_sum_list([0, 1, 2]))
 
+from typing import Sequence
+
+def my_num_sequence(numbers: Sequence) -> int:
+    total = 0
+
+    for i in numbers:
+        total += i
+    
+    return total
+
+print(my_num_sequence((1, 2, 3)))
+print(my_num_sequence(b'123'))
+
 def my_sum_dict(numbers_dictionary: dict[str, int]) -> int:
     total = 0
 
