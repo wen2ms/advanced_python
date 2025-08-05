@@ -11,6 +11,8 @@ pandas = "*"
 ipykernel = "*"
 matplotlib = "*"
 mypy = "*"
+tqdm = "*"
+rich = "*"
 
 [dev-packages]
 
