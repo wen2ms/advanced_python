@@ -13,6 +13,8 @@ matplotlib = "*"
 mypy = "*"
 tqdm = "*"
 rich = "*"
+"oslo.utils" = "*"
+tox = "*"
 
 [dev-packages]
 
