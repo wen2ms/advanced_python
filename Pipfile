@@ -15,6 +15,7 @@ tqdm = "*"
 rich = "*"
 "oslo.utils" = "*"
 tox = "*"
+requests = "*"
 
 [dev-packages]
 
