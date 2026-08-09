@@ -1,6 +1,5 @@
 import collections
 
-
 dict_list = collections.defaultdict(list)
 dict_list["a"].append(1)
 dict_list["a"].append(2)

@@ -22,6 +22,8 @@ print(my_dir.exists())
 print(my_file.exists())
 print(new_file.exists())
 
+print(new_file.with_suffix(".json"))
+
 print(my_dir.parent.absolute())
 print(my_file.parent)
 print(new_file.parent.parent)
@@ -33,7 +35,9 @@ print(path)
 for path in Path().glob("*usage*", case_sensitive=False):
     print(path)
 
-with my_file.open() as infile:
+print(my_file.read_text())
+
+with my_file.open("r") as infile:
     print(type(infile))
     # print(infile.read())
 
