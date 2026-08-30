@@ -1,10 +1,9 @@
-def foo(number):
+def foo(number: int):
     while number > 0:
         yield number
-
         number -= 1
-
     return -1
+
 
 generator_foo = foo(5)
 
@@ -15,8 +14,9 @@ try:
 except StopIteration as e:
     print(e.value)
 
+
 class Node:
-    def __init__(self, name):
+    def __init__(self, name: str) -> None:
         self.name = name
         self.next = None
 
@@ -24,12 +24,12 @@ class Node:
         node = self
         while node is not None:
             yield node
-            
             node = node.next
 
-head = Node('head')
-node_1 = Node('node_1')
-node_2 = Node('node_2')
+
+head = Node("head")
+node_1 = Node("node_1")
+node_2 = Node("node_2")
 
 head.next = node_1
 node_1.next = node_2
@@ -39,14 +39,15 @@ print()
 for node in head:
     print(node.name)
 
+
 def bar(number):
     while number > 0:
         send_value = yield number
-
         if send_value is not None:
             number = send_value
-        
+
         number -= 1
+
 
 generator_bar = bar(5)
 

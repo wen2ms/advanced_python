@@ -1,3 +1,4 @@
+import random
 from collections import abc
 
 # With __iter__ method
@@ -10,9 +11,7 @@ numbers = iter(list(range(5)))
 
 next(numbers)
 
-print(next(numbers), '\n')
-
-import random
+print(next(numbers), "\n")
 
 generate_random = lambda: random.randint(1, 6)
 
