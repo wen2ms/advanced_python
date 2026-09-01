@@ -52,3 +52,9 @@ file.touch()
 
 # path.rmdir()
 shutil.rmtree(path)
+
+path = Path(__file__)
+# Last modified time
+print(path.stat().st_mtime)
+# Last access time
+print(path.stat().st_atime)
