@@ -2,7 +2,7 @@ class Dog:
     # class variable
     dog_book = {"yellow": 30, "black": 20, "white": 10}
 
-    def __init__(self, name, color, weight):
+    def __init__(self, name: str, color: str, weight: int) -> None:
         self.name = name
         self.color = color
         self.weight = weight
@@ -10,11 +10,11 @@ class Dog:
         self.dog_book[color] += 1
 
     # instance method
-    def bark(self):
+    def bark(self) -> None:
         print(f"{self.name} is barking...")
 
     @classmethod
-    def dogs_number(cls):
+    def dogs_number(cls) -> int:
         number = 0
 
         for color_dogs_number in cls.dog_book.values():
@@ -24,7 +24,7 @@ class Dog:
 
     # static method can be separated from the class and cannot access class or instance variables
     @staticmethod
-    def total_weights(dogs):
+    def total_weights(dogs) -> int:
         total = 0
 
         for dog in dogs:
